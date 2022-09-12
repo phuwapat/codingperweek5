@@ -11,12 +11,16 @@ float input_height(float sum)
     {
     sum = sum + input[i];
     }
-    sum = sum / 10;
        return sum;
+}
+float average_height(float x)
+{
+    x = x / 10;
+    return x;
 }
 int main()
 {
     float sum;
-    printf("The average height of 10 people is %.1f",input_height(sum));
+    printf("The average height of 10 people is %.1f",average_height(input_height(sum)));
     return 0;
 }
